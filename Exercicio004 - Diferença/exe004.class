@@ -1,0 +1,19 @@
+import java.util.Scanner;
+public class Main {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.print("Digite um valor inteiro: ");
+		int valor1 = sc.nextInt();
+		System.out.print("Digite um valor inteiro: ");
+		int valor2 = sc.nextInt();
+		System.out.print("Digite um valor inteiro: ");
+		int valor3 = sc.nextInt();
+		System.out.print("Digite um valor inteiro: ");
+		int valor4 = sc.nextInt();
+		int diferenca = (valor1 * valor2) - (valor3 * valor4);
+		System.out.printf("DIFERENÇA = %d", diferenca);
+		sc.close();
+	}
+
+}
