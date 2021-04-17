@@ -1,0 +1,21 @@
+import java.util.Locale;
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.print("Digite o código do produto: ");
+		int codigo = sc.nextInt();
+		System.out.print("Digite o valor do produto: ");
+		float valor = sc.nextFloat();
+		System.out.print("Quantidade: ");
+		int quantidade = sc.nextInt();
+		float total= valor * quantidade;
+		Locale.setDefault(Locale.US);
+		System.out.printf("O codigo do produto adquirido é %d%n", codigo);
+		System.out.printf("VALOR A PAGAR: R$ %.2f ", total);
+		sc.close();
+	}
+
+}
