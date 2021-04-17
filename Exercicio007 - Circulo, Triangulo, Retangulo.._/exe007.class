@@ -1,0 +1,27 @@
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Digite o primeiro valor: ");
+		double n1 = sc.nextDouble();
+		System.out.println("Digite o segundo valor: ");
+		double n2 = sc.nextDouble();
+		System.out.println("Digite o terceiro valor: ");
+		double n3 = sc.nextDouble();
+		double tria = n1 * n3 / 2;
+		double circulo = Math.pow(n3, 2);
+		double areaCirc = 3.14159 * circulo;
+		double trapezio = ((n1 + n2) * n3) / 2;
+		double retangulo = n1 * n2;
+		double quadrado = Math.pow(n2, 2);
+		System.out.printf("TRIÂNGULO:%.3f%n", tria);
+		System.out.printf("CIRCULO:%.3f%n", areaCirc);
+		System.out.printf("TRAPÉZIO:%.3f%n", trapezio);
+		System.out.printf("QUADRADO:%.3f%n", quadrado );
+		System.out.printf("RETÂNGULO:%.3f%n", retangulo);
+		sc.close();
+	}
+
+}
