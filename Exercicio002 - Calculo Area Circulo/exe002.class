@@ -1,0 +1,14 @@
+import java.util.locale;
+import java.util.Scanner;
+public class Main {
+    public public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Digite o raio do circulo: ");
+        circulo = Math.pow(circulo, 2);
+        double pi = 3.14159;
+        double calculo = pi * circulo;
+        Locale.setDefault(Locale.US);
+        System.out.printf("A área do circulo é de %.4f",calculo);
+        sc.close();        
+    }
+}
