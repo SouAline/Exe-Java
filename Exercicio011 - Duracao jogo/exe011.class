@@ -1,0 +1,26 @@
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+	Scanner teclado = new Scanner(System.in);
+	System.out.print("Digite o horario inicial do jogo:");
+	int horaInicio = teclado.nextInt();
+	System.out.print("Digite o horario do término do jogo: ");
+	int horaTermino = teclado.nextInt();
+	if (horaInicio < horaTermino) {
+		int resultado = horaTermino -  horaInicio;
+		System.out.printf("O JOGO DUROU %d.", resultado);
+	}
+	else if (horaInicio > horaTermino) {
+		int resultado2 = 24 - horaInicio;
+		int resultado_final = resultado2 + horaTermino;
+		System.out.printf("O JOGO DUROU %d HORAS", resultado_final);
+	}
+	else {
+		System.out.println("O JOGO DUROU 24 HORAS");
+		
+	teclado.close();
+	}
+	}
+}
