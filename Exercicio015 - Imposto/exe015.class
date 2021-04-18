@@ -1,0 +1,27 @@
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		Scanner teclado = new Scanner(System.in);
+		System.out.println("Digite o valor da sua renda: ");
+		double renda = teclado.nextDouble();
+		if (renda >= 0 && renda <=2000.00) {
+			System.out.println("Isento");
+		}
+		else if (renda > 2000.00 && renda < 3000.00) {
+			double imposto = renda * 8 / 100;
+			System.out.printf("Você pagará R$%.2f de imposto", imposto);
+		}
+		else if (renda > 3000.00 && renda < 4500.00) {
+			double imposto2 = renda * 18 / 100;
+			System.out.printf("Você pagará R$%.2f de imposto", imposto2);
+		}
+		else {
+			double imposto3 = renda * 28 / 100;
+			System.out.printf("Você pagará R$%.2f de imposto",imposto3);
+		}
+		teclado. close();	
+	}
+
+}
