@@ -1,0 +1,58 @@
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		Scanner teclado = new Scanner(System.in);
+		System.out.println("CODIGO         ESPECIFICAÇÃO        PREÇO");
+		System.out.printf("1               Cachorro Quente      R$4.00%n2               X-Salada             R$4.50%n3               X-Bacon              R$5.00%n4               Torrada Simples      R$2.00%n5               Refrigerante         R$1.50%n");
+		
+		System.out.println("DIGITE O CODIGO DA SUA PRIMEIRA OPÇÃO:");
+		int codigo1 = teclado.nextInt();
+		System.out.println("DIGITE O CODIGO DA SUA SEGUNDA OPÇÃO: ");
+		int codigo2 = teclado.nextInt();
+		
+		if (codigo1 == 1 && codigo2 == 2 || codigo1 == 2 && codigo2 == 1) {
+			double soma = 4.00 + 4.50;
+			System.out.printf("Seu pedido foi Cachorro Quente e X-Salada, no total de %.2f", soma);
+		}
+		else if (codigo1 == 1 && codigo2 == 3 || codigo1 == 3 && codigo2 == 1) {
+			double soma1 = 4.00 + 5.00;
+			System.out.printf("Seu pedido foi Cachorro quente e X-Bacon, no total de %.2f", soma1);
+		}
+		else if (codigo1 == 1 && codigo2 == 4 || codigo1 == 4 && codigo2 == 1 ) {
+			double soma2 = 4.00 + 2.00;
+			System.out.printf("Seu pedido foi Cachorro Quente e Torrada simples, no valor totatl de %.2f.", soma2);
+		}
+		else if (codigo1 == 1 && codigo2 == 5 || codigo1 == 5 && codigo2 == 1 ) {
+			double soma0 = 4.00 + 1.50;
+			System.out.printf("Seu pedido foi de Cachorro Quente e Refrigerante, no total de %.2f", soma0);
+		}
+		else if (codigo1 == 2 && codigo2 == 3 || codigo1 == 3 && codigo2 == 2 ) {
+			double soma3 = 4.50 + 5.00;
+			System.out.printf("Seu pedido foi de X-Salada e X-Bacon, no total de %.2f", soma3);
+		}
+		else if (codigo1 == 2 && codigo2 == 4 || codigo1 == 4 && codigo2 == 2) {
+			double soma4 = 4.5 + 2.00;
+			System.out.printf("Seu pedido foi X-Salada e Torrada Simples, no total de %.2f", soma4);
+		}
+		else if (codigo1 == 2 && codigo2 == 5 || codigo1 == 5 && codigo2 == 2) {
+			double soma5 = 4.50 + 1.50;
+			System.out.printf("Seu pedido foi X-Salada e Refrigerante, no total de %.2f", soma5);
+		}
+		else if (codigo1 == 3 && codigo2 == 4 || codigo1 == 4 && codigo2 == 3) {
+			double soma6 = 5.00 + 2.00;
+			System.out.printf("Seu pedido foi X-Bacon e Torrada, no total de %.2f", soma6);
+		}
+		else if (codigo1 == 3 && codigo2 == 5 || codigo1 == 5 && codigo2 == 3) {
+			double soma7 = 5.00 + 1.50;
+			System.out.printf("Seu pedido foi de X-Bacon e Refrigerante, no total de %.2f", soma7);
+		}
+		else {
+			double soma8 = 2.00 + 1.50;
+			System.out.printf("Seu pedido foi Torrada Simples e Refrigerante, no total de %.2f", soma8);
+		}
+	teclado.close();
+		}
+
+	}
