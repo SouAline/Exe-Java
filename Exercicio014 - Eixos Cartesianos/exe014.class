@@ -1,0 +1,31 @@
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		Scanner teclado = new Scanner(System.in);
+		System.out.print("Digite um valor:");
+		double valor1 = teclado.nextDouble();
+		System.out.println("Digite um valor: ");
+		double valor2 = teclado.nextDouble();
+		
+		if (valor1 > 0 && valor2 > 0) {
+			System.out.println("Q1");
+		}
+		else if (valor1 > 0 && valor2 < 0) {
+			System.out.println("Q4");
+		}
+		else if (valor1 < 0 && valor2 < 0) {
+			System.out.println("Q3");
+		}
+		else if (valor1 < 0 && valor2 > 0) {
+			System.out.println("Q2");
+		}
+		else {
+			System.out.println("Origem");
+		}
+		teclado.close();
+	}
+	
+
+}
