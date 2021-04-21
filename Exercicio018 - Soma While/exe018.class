@@ -1,0 +1,18 @@
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.print("Digite um numero inteiro qualquer: ");
+		int numero = sc.nextInt();
+		int soma = 0;
+		while (numero != 0) {
+			soma += numero; // soma recebe ela mesma mais o numero digitado
+			numero = sc.nextInt();
+		}
+		System.out.println(soma);
+		sc.close();
+	}
+
+}
