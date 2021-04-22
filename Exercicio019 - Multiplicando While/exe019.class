@@ -1,0 +1,17 @@
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		System.out.println("Digite um número inteiro para multiplicar por 2 até o valor de 150");
+		Scanner teclado = new Scanner(System.in);
+		int multiplicando = teclado.nextInt();
+		while (multiplicando <150) {
+			multiplicando = multiplicando *  2;
+			System.out.println(multiplicando);
+		}
+		teclado.close();
+
+	}
+
+}
