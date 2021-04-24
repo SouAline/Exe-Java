@@ -1,0 +1,16 @@
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		Scanner teclado = new Scanner(System.in);
+		int numero = teclado.nextInt();
+		int somaTotal = 0;
+		for (int contador = 0; contador < numero; contador++) {
+			int soma = teclado.nextInt();
+			somaTotal += soma; 
+		}
+		teclado.close();
+	}
+
+}
