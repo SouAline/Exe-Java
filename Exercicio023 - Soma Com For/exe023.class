@@ -10,6 +10,7 @@ public class Main {
 			int soma = teclado.nextInt();
 			somaTotal += soma; 
 		}
+        System.out.println(Soma);
 		teclado.close();
 	}
 
