@@ -1,0 +1,32 @@
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+		Scanner teclado = new Scanner(System.in);
+		System.out.println("Digite um número: "); // o nº digitado será a quantidade de numeros que vão ser lidos
+		int numero = teclado.nextInt();
+		int somador = 0;
+		int foravinte = 0;
+		for (int contador = 0; contador < numero; contador++) { //Faz com que o nº acima digitado repita o comando que vem após
+			System.out.println("Digite um numero: ");
+			int numero2 = teclado.nextInt();
+			
+			if (numero2 >= 10 && numero <= 20) { // condição se o nº digitado for maior que 10 e menor que 20
+				somador ++;	// a variavel somador recebe ela mesma mais 1	
+			}
+			else {
+				foravinte++;
+			}
+		}
+		
+		int dentrovinte =  somador;
+		System.out.printf("%d in %n", dentrovinte);
+		System.out.printf("%d out", foravinte);
+		
+		
+		teclado.close();
+	}
+
+}
