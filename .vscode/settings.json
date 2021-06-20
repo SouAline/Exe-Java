@@ -1,6 +1,7 @@
 {
     "java.project.sourcePaths": [
+        "Exercicio027 - Metodos",
         "Exercicio024 - Impar Com For",
-        "Exercicio027 - Metodos"
+        "Exercicio028 - Randon"
     ]
 }
