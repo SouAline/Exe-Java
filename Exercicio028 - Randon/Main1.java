@@ -1,6 +1,6 @@
 import java.util.Random;
 
-public class Main{
+public class Main1{
     public static void main(String args[]){
         int numero = new Random().nextInt(200) - 100;
         System.out.println("O número gerado é: " + numero);

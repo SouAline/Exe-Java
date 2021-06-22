@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Main {
+public class Exe029 {
  public static void main(String args[]){
      System.out.println("Digite um número entre 1 e 4");
      Scanner teclado = new Scanner(System.in);
@@ -21,9 +21,7 @@ public class Main {
         default:
             System.out.println("Opção digitada não existe");
             break;
-
-            
-
-     }
- }   
+           
+         }
+     }  teclado.close();   
 }

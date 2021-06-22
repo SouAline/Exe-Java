@@ -1,7 +1,6 @@
 import java.util.Scanner;
 
-public class Main {
-10
+public class Exe024 {
 	public static void main(String[] args) {
 		Scanner teclado = new Scanner(System.in);
 		System.out.println("Digite um numero inteiro: ");
