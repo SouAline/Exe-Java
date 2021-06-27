@@ -1,9 +1,11 @@
 {
     "java.project.sourcePaths": [
+        "Exercicio031 - Strings",
+        "Exercicio030 - Exceptions",
         "Exercicio029 - Usa Switch",
         "Exercicio028 - Randon",
         "Exercicio027 - Metodos",
         "Exercicio024 - Impar Com For",
-        "Exercicio030 - Exceptions"
+        "Exercicio032 - Usando Metodo"
     ]
 }
