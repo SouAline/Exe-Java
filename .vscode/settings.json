@@ -1,5 +1,6 @@
 {
     "java.project.sourcePaths": [
+        "Exercicio033 - Calculo da area de um triangulo",
         "Exercicio032 - Usando Metodo",
         "Exercicio031 - Strings",
         "Exercicio030 - Exceptions",
@@ -7,6 +8,6 @@
         "Exercicio028 - Randon",
         "Exercicio027 - Metodos",
         "Exercicio024 - Impar Com For",
-        "Exercicio033 - Calculo da area de um triangulo"
+        "Exercicio034 - Product"
     ]
 }
