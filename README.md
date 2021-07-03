@@ -1,2 +1,5 @@
-# Exe - Java
- Exercícios de Java para praticar a linguagem
+# Exercício - Java
+ Exercícios de Java de cursos gratuitos e pagos para praticar a linguagem.
+- Udemy
+- Dell
+- Cursos em video/Guanabara
