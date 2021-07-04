@@ -1,10 +1,9 @@
 import java.util.Scanner;
 
-public class Main {
-
+public class Exe024 {
 	public static void main(String[] args) {
 		Scanner teclado = new Scanner(System.in);
-		System.out.println("Digite um numeto inteiro: ");
+		System.out.println("Digite um numero inteiro: ");
 		int numero = teclado.nextInt();
 		for (int contador=0; contador < numero; contador++) {
 			int impar = (contador % 2);
