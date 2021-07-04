@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="src" path="Exercicio002 - Calculo Area Circulo"/>
+	<classpathentry kind="src" path="Exercicio024 - Impar Com For"/>
+	<classpathentry kind="src" path="TP3_Fundamentos_Desenvolvimento_Java/src"/>
+	<classpathentry kind="output" path="TP3_Fundamentos_Desenvolvimento_Java/bin"/>
+</classpath>
