@@ -20,14 +20,11 @@ public class Program {
 	}
 	
 	public String toString() {
-		return name + "," 
-				+ price
+		return name 
+				+ "," 
+				+ String.format("%2.f" , price)
 				+ ", "
 				+ quantity
 				+ " units, Total: "
-				+ totalValueInStock();
+				+ String.format("%2.f" , totalValueInStock());
 	}
-}
-
-
-
