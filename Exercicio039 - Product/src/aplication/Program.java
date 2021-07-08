@@ -1,29 +1,33 @@
-
 package aplication;
-
-import java.util.Locale;
-import java.util.Scanner;
-
-import entities.Product;
 
 public class Program {
 
-	public static void main(String[] args) {
-		
-	Locale.setDefault(Locale.US);
-	Scanner sc = new Scanner(System.in);
+	public String name;
+	public double price;
+	public int quantity;
 	
-	Product product = new Product();
-	System.out.println("Enter product data: ");
-	System.out.println("Name: ");
-	product.name = sc.nextLine();
-	System.out.println("Price R$: ");
-	product.price = sc.nextDouble();
-	System.out.println("Quantity in stock: ");
-	product.quantity = sc.nextInt();// this variable is declareted with teclado
-	
-	System.out.println(product.name + " - " + product.price + " - " + product.quantity);
-	sc.close();
+	public double totalValueInStock() {
+		return price * quantity;	
 	}
-
+	
+	public void addProducts(int quantity) {
+		this.quantity += quantity; //the word "this" will mean using the variable declared earlier in the code
+	}
+	
+	public void removeProducts(int quantity) {
+		this.quantity -= quantity; //the second quantity wiil mean using the variable declared in side the "()"
+		
+	}
+	
+	public String toString() {
+		return name + "," 
+				+ price
+				+ ", "
+				+ quantity
+				+ " units, Total: "
+				+ totalValueInStock();
+	}
 }
+
+
+
