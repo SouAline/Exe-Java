@@ -11,7 +11,7 @@ public class Program {
 	}
 	
 	public void addProducts(int quantity) {
-		this.quantity += quantity; //the word "this" will mean using the variable declared earlier in the code
+		this.quantity = this.quantity + quantity; //the word "this" will mean using the variable declared earlier in the code
 	}
 	
 	public void removeProducts(int quantity) {
@@ -22,9 +22,13 @@ public class Program {
 	public String toString() {
 		return name 
 				+ "," 
-				+ String.format("%2.f" , price)
+				+ String.format("%.2f" , price)
 				+ ", "
 				+ quantity
 				+ " units, Total: "
-				+ String.format("%2.f" , totalValueInStock());
+				+ String.format("%.2f" , totalValueInStock());
 	}
+}
+
+
+
