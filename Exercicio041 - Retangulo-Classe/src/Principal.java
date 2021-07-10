@@ -14,6 +14,7 @@ public class Principal {
 		retangulo.setLargura(teclado.nextDouble());
 		
 		
+		teclado.close();
 	}
 
 }
