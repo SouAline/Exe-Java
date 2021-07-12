@@ -29,7 +29,7 @@ public class Retangulo {
 		return perimetro;
 	}
 	public double diagonal() {
-		double diagonal = largura + altura;
+		double diagonal = Math.sqrt(altura * altura + largura * largura);
 		return diagonal;
 	}
 	
