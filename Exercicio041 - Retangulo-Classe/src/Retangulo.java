@@ -19,16 +19,16 @@ public class Retangulo {
 		this.largura = largura;
 	}
 	
-	public double area(double largura, double altura) {
+	public double area() {
 		double area = largura * altura;
 		return area;
 	}
 	
-	public double perimetro(double largura, double altura) {
+	public double perimetro() {
 		double perimetro = ((largura * 2) + (altura * 2));
 		return perimetro;
 	}
-	public double diagonal(double largura, double altura) {
+	public double diagonal() {
 		double diagonal = largura + altura;
 		return diagonal;
 	}

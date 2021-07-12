@@ -13,6 +13,11 @@ public class Principal {
 		System.out.print("Digite a largura do retangulo: ");
 		retangulo.setLargura(teclado.nextDouble());
 		
+		System.out.println("O perimetro do retangulo é: " + retangulo.perimetro());
+		
+		System.out.printf("A área de um retangulo é: " + retangulo.area());
+		
+		
 		
 		teclado.close();
 	}
